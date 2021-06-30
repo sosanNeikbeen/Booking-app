@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Booking</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body class="login-body">
+    <div>
+      <div class="login-container">
+        <div style="background-color: white" class="form-box">
+          <h3 class="signup-title">Create your account</h3>
+          <label>Full Name</label>
+          <input
+            class=""
+            type="text"
+            placeholder="Enter firstname and lastname"
+            required
+          />
+          <label>Email</label>
+          <input
+            class=""
+            type="text"
+            placeholder="Enter a valid email address"
+            required
+          />
+          <label>Password</label>
+          <input
+            class="login-input"
+            type="text"
+            placeholder="Enter Password"
+            required
+          />
+          <input type="checkbox" />
+          <label> I've read all the <a id="link">terms and conditions</a></label
+          ><br />
+
+          <input class="center" type="submit" value="Create Account" />
+        </div>
+        <p>Already have an account? <a href="./login.html">Sign in</a></p>
+
+        <!-- The Modal -->
+        <div id="modal" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3 style="text-align: center">Terms and condition</h3>
+            <ul style="list-style-type: none">
+              <li><h4>Level 1</h4></li>
+              <ol>
+                <li>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Phasellus pharetra, quam at lobortis porta, eros neque
+                    facilisis nibh, a fermentum tortor ipsum ac mauris. Integer
+                    elementum elit elit, et molestie eros rutrum nec.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Phasellus pharetra, quam at lobortis porta, eros neque
+                    facilisis nibh, a fermentum tortor ipsum ac mauris. Integer
+                    elementum elit elit, et molestie eros rutrum nec.
+                  </p>
+                </li>
+              </ol>
+              <li><h4>Level 2</h4></li>
+              <ol>
+                <li>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Phasellus pharetra, quam at lobortis porta, eros neque
+                    facilisis nibh, a fermentum tortor ipsum ac mauris. Integer
+                    elementum elit elit, et molestie eros rutrum nec.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Phasellus pharetra, quam at lobortis porta, eros neque
+                    facilisis nibh, a fermentum tortor ipsum ac mauris. Integer
+                    elementum elit elit, et molestie eros rutrum nec.
+                  </p>
+                </li>
+              </ol>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      // Get the modal
+      let modal = document.getElementById("modal");
+
+      // Get the button that opens the modal
+      let link = document.getElementById("link");
+
+      // Get the <span> element that closes the modal
+      let span = document.getElementsByClassName("close")[0];
+
+      // When the user clicks the button, open the modal
+      link.onclick = () => {
+        modal.style.display = "block";
+      };
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = () => {
+        modal.style.display = "none";
+      };
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = (event) => {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
+  </body>
+</html>

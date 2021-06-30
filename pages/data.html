@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Booking</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="logo">Book a hotel</div>
+      <a href="/pages/login.html"
+        ><i class="glyphicon glyphicon-log-in"></i> Sign in</a
+      >
+      <div class="dropdown">
+        <button class="dropbtn" onclick="myFunction()">EN</button>
+        <div class="dropdown-content" id="myDropdown">
+          <a href="#">DE</a>
+          <a href="#">FR</a>
+        </div>
+      </div>
+    </div>
+    <section class="container">
+      <div class="box">
+        <div class="item-one">
+          <input type="text" placeholder="Where are you going?" />
+        </div>
+        <div class="item-two">
+          <input type="date" id="start" />
+        </div>
+        <div class="item-three">
+          <input type="date" id="end" />
+        </div>
+        <div class="item-four">
+          <div class="dropdown1">
+            <p data-value=""><i class="fa fa-user"></i> 1 room, 1 guest</p>
+            <ul>
+              <li>
+                <div class="alignleft">Adults</div>
+                <div class="alignright">
+                  <button type="button" class="decrement-btn">-</button>
+                  <span for="item1">1</span>
+                  <button type="button" class="increment-btn">+</button>
+                </div>
+              </li>
+              <li>
+                <div class="alignleft">Children</div>
+                <div class="alignright">
+                  <button type="button" class="decrement-btn">-</button>
+                  <span for="item1">0</span>
+                  <button type="button" class="increment-btn">+</button>
+                </div>
+              </li>
+              <li>
+                <div class="alignleft">Room</div>
+                <div class="alignright">
+                  <button type="button" class="decrement-btn">-</button>
+                  <span for="item1">1</span>
+                  <button type="button" class="increment-btn">+</button>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="item-five">
+          <input type="submit" value="Search" />
+        </div>
+      </div>
+      <div class="side-left">
+        <h4>Limit Results:</h4>
+        <p style="line-height: 0%" class="subtitle">
+          1,701 hotels and apartments
+        </p>
+        <hr />
+        <h4>Popular filters</h4>
+
+        <ul>
+          <li>
+            <input type="checkbox" /> <label> Houses and apartments</label>
+          </li>
+          <li><input type="checkbox" /> <label> Including breakfast</label></li>
+          <li><input type="checkbox" /> <label> Pool</label></li>
+          <li><input type="checkbox" /> <label> Wifi included</label></li>
+          <li><input type="checkbox" /> <label> Parking included</label></li>
+          <li><input type="checkbox" /> <label> Animal friendly</label></li>
+        </ul>
+        <hr />
+        <a>
+          <img
+            src="/resources/ad.jpeg"
+            alt="Cinque Terre"
+            height="450"
+            width="200"
+          />
+        </a>
+      </div>
+      <div class="data-container">
+        <div class="side">
+          <a>
+            <img
+              src="/resources/berlin.jpeg"
+              alt="Cinque Terre"
+              height="180"
+              width="330"
+            />
+          </a>
+        </div>
+
+        <article>
+          <a><p class="header">Novotel Berlin Am Tiergarten</p></a>
+          <a id="link"
+            ><p style="line-height: 0%" class="subtitle">
+              Strasse Des 17. Juni 106-108, Berlin, 10623, BE, Germany
+            </p></a
+          >
+
+          <h4 style="padding-top: 10px">Charlottenburg</h4>
+          <ul>
+            <li>
+              <p style="line-height: 0%" class="subtitle">
+                City center: 1.0 km
+              </p>
+            </li>
+            <li>
+              <p style="line-height: 0%" class="subtitle">
+                Diplomatic Quarter: 1.7 km
+              </p>
+            </li>
+          </ul>
+          <span class="_3yXMS- _11XjrQ _1biq31">8.8</span>
+          <h4 style="display: inline">Fantastic</h4>
+          <p class="subtitle">339 total reviews from the site</p>
+        </article>
+
+        <div class="side-right">
+          <p class="header">€ 410</p>
+          <p style="line-height: 0%" class="subtitle">
+            including taxes and fees
+          </p>
+
+          <p style="color: purple">
+            <i
+              style="
+                background-color: rgba(190, 144, 212, 0.3);
+                border-radius: 10px;
+              "
+              class="fa fa-moon-o"
+            ></i>
+            Collect stamps
+          </p>
+          <input style="float: right" type="submit" value="Book now" />
+          <p style="color: green">
+            <i class="fa fa-check-square-o"></i> Free cancellation
+          </p>
+        </div>
+      </div>
+
+      <div class="data-container">
+        <div class="side">
+          <a>
+            <img
+              src="/resources/berlin2.gif"
+              alt="Cinque Terre"
+              height="180"
+              width="330"
+            />
+          </a>
+        </div>
+
+        <article>
+          <a><p class="header">Motel One Berlin-Upper West</p></a>
+          <a id="link"
+            ><p style="line-height: 0%" class="subtitle">
+              Kantstrasse 163 - 165, Berlin, 10623, BE, Germany
+            </p></a
+          >
+
+          <h4 style="padding-top: 10px">Center of West Berlin</h4>
+          <ul>
+            <li>
+              <p style="line-height: 0%" class="subtitle">
+                City center: 1.5 km
+              </p>
+            </li>
+            <li>
+              <p style="line-height: 0%" class="subtitle">
+                Diplomatic district: 1.8 km
+              </p>
+            </li>
+          </ul>
+          <span class="_3yXMS- _11XjrQ _1biq31">9.0</span>
+          <h4 style="display: inline">Excellent</h4>
+          <p class="subtitle">265 reviews from the site</p>
+        </article>
+
+        <div class="side-right">
+          <p class="header">€ 415</p>
+          <p style="line-height: 0%" class="subtitle">
+            including taxes and fees
+          </p>
+
+          <p style="color: purple">
+            <i
+              style="
+                background-color: rgba(190, 144, 212, 0.3);
+                border-radius: 10px;
+              "
+              class="fa fa-moon-o"
+            ></i>
+            Collect stamps
+          </p>
+          <input style="float: right" type="submit" value="Book now" />
+          <p style="color: green">
+            <i class="fa fa-check-square-o"></i> Free cancellation
+          </p>
+        </div>
+      </div>
+      <div class="data-container">
+        <div class="side">
+          <a>
+            <img
+              src="/resources/hotel.jpeg"
+              alt="Cinque Terre"
+              height="180"
+              width="330"
+            />
+          </a>
+        </div>
+
+        <article>
+          <a><p class="header">Novotel Berlin Am Tiergarten</p></a>
+          <a id="link"
+            ><p style="line-height: 0%" class="subtitle">
+              Strasse Des 17. Juni 106-108, Berlin, 10623, BE, Germany
+            </p></a
+          >
+
+          <h4 style="padding-top: 10px">Charlottenburg</h4>
+          <ul>
+            <li>
+              <p style="line-height: 0%" class="subtitle">
+                City center: 1.0 km
+              </p>
+            </li>
+            <li>
+              <p style="line-height: 0%" class="subtitle">
+                Diplomatic Quarter: 1.7 km
+              </p>
+            </li>
+          </ul>
+          <span class="_3yXMS- _11XjrQ _1biq31">8.8</span>
+          <h4 style="display: inline">Fantastic</h4>
+          <p class="subtitle">339 total reviews from the site</p>
+        </article>
+
+        <div class="side-right">
+          <p class="header">€ 410</p>
+          <p style="line-height: 0%" class="subtitle">
+            including taxes and fees
+          </p>
+
+          <p style="color: purple">
+            <i
+              style="
+                background-color: rgba(190, 144, 212, 0.3);
+                border-radius: 10px;
+              "
+              class="fa fa-moon-o"
+            ></i>
+            Collect stamps
+          </p>
+          <input style="float: right" type="submit" value="Book now" />
+          <p style="color: green">
+            <i class="fa fa-check-square-o"></i> Free cancellation
+          </p>
+        </div>
+      </div>
+
+      <div class="data-container">
+        <div class="side">
+          <a>
+            <img
+              src="/resources/berlin3.jpeg"
+              alt="Cinque Terre"
+              height="180"
+              width="330"
+            />
+          </a>
+        </div>
+
+        <article>
+          <a><p class="header">Novotel Berlin Am Tiergarten</p></a>
+          <a id="link"
+            ><p style="line-height: 0%" class="subtitle">
+              Strasse Des 17. Juni 106-108, Berlin, 10623, BE, Germany
+            </p></a
+          >
+
+          <h4 style="padding-top: 10px">Charlottenburg</h4>
+          <ul>
+            <li>
+              <p style="line-height: 0%" class="subtitle">
+                City center: 1.0 km
+              </p>
+            </li>
+            <li>
+              <p style="line-height: 0%" class="subtitle">
+                Diplomatic Quarter: 1.7 km
+              </p>
+            </li>
+          </ul>
+          <span class="_3yXMS- _11XjrQ _1biq31">8.8</span>
+          <h4 style="display: inline">Fantastic</h4>
+          <p class="subtitle">339 total reviews from the site</p>
+        </article>
+
+        <div class="side-right">
+          <p class="header">€ 410</p>
+          <p style="line-height: 0%" class="subtitle">
+            including taxes and fees
+          </p>
+
+          <p style="color: purple">
+            <i
+              style="
+                background-color: rgba(190, 144, 212, 0.3);
+                border-radius: 10px;
+              "
+              class="fa fa-moon-o"
+            ></i>
+            Collect stamps
+          </p>
+          <input style="float: right" type="submit" value="Book now" />
+          <p style="color: green">
+            <i class="fa fa-check-square-o"></i> Free cancellation
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- The Modal -->
+    <div id="modal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1214.031031137013!2d13.334365092847554!3d52.51421590405708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a85106af9bf6a5%3A0x23f59a82c8a1e63e!2sNovotel%20Berlin%20Am%20Tiergarten!5e0!3m2!1sen!2sde!4v1623844822561!5m2!1sen!2sde"
+          width="500"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
+    </div>
+
+    <div class="footer">
+      <footer>
+        <div class="social">
+          <a href="#"><i class="icon fa fa-instagram"></i></a
+          ><a href="#"><i class="icon fa fa-snapchat-ghost"></i></a
+          ><a href="#"><i class="icon fa fa-twitter"></i></a
+          ><a href="#"><i class="icon fa fa-facebook-f"></i></a>
+        </div>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="/index.html">Home</a></li>
+          <li class="list-inline-item"><a href="#">Services</a></li>
+          <li class="list-inline-item"><a href="#">About</a></li>
+          <li class="list-inline-item"><a href="#">Terms</a></li>
+          <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+        </ul>
+        <p class="copyright">Book a hotel © 2021</p>
+      </footer>
+    </div>
+
+    <script>
+      // Get the modal
+      var modal = document.getElementById("modal");
+      // Get the button that opens the modal
+      var link = document.getElementById("link");
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+      // When the user clicks the button, open the modal
+      link.onclick = function () {
+        modal.style.display = "block";
+      };
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function () {
+        modal.style.display = "none";
+      };
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
+
+    <script src="/js/index.js"></script>
+  </body>
+</html>
